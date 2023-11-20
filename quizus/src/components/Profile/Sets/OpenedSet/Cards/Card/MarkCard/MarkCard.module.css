@@ -1,0 +1,20 @@
+.btn-mark-card {
+  top: -2px;
+  right: 70px;
+  background-position: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.unmark {
+  background-image: url("../../../../../../../assets/img/star.png");
+}
+
+.mark {
+  background-image: url("../../../../../../../assets/img/star-gold2.png");
+}
+
+@media screen and (max-width: 576px) {
+  .btn-mark-card {
+    right: 50px;
+  }
+}

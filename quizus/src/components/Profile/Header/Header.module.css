@@ -1,0 +1,43 @@
+.header {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.238);
+}
+
+.greeting {
+  margin: 0 0 0 20px;
+  padding: 0 20px 0 30px;
+  border-radius: 20px 10px 0 0;
+  font-size: 25px;
+  font-family: Pacifico;
+}
+
+.animation {
+  animation: greeting 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes greeting {
+  0% {
+    font-size: 0px;
+  }
+  50% {
+    font-size: 70px;
+  }
+  100% {
+    font-size: 20px;
+  }
+}
+
+.greeting span {
+  color: goldenrod;
+  text-transform: uppercase;
+}
+
+.greeting p i {
+  color: rgba(0, 0, 0, 0.743);
+}
+
+@media screen and (max-width: 550px) {
+  .greeting {
+    font-size: 15px;
+  }
+}

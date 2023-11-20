@@ -1,0 +1,109 @@
+.main > p {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: Dancing;
+}
+
+.range {
+  width: 110px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgba(192, 184, 140, 0.6);
+}
+
+.slider {
+  width: 32px;
+  aspect-ratio: 1/1;
+  background-color: rgb(165, 160, 133);
+  border: 0;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.changed {
+  animation: changed 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes changed {
+  to {
+    background-color: rgba(137, 134, 115, 0.4);
+  }
+}
+
+.chosen {
+  animation: chosen 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes chosen {
+  to {
+    font-weight: 800;
+    color: rgb(129, 70, 70);
+  }
+}
+
+.left {
+  animation: left 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    background-color: rgb(138, 134, 112);
+    transform: translateX(75px);
+  }
+}
+
+.right {
+  animation: right 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes right {
+  from {
+    transform: translateX(75px);
+  }
+  to {
+    background-color: rgb(119, 118, 110);
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .main > p {
+    font-size: 30px;
+  }
+  .range {
+    width: 80px;
+  }
+  .slider {
+    width: 22px;
+  }
+
+  @keyframes left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      background-color: rgb(138, 134, 112);
+      transform: translateX(57px);
+    }
+  }
+  @keyframes right {
+    from {
+      transform: translateX(57px);
+    }
+    to {
+      background-color: rgb(92, 92, 88, 0.7);
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,161 @@
+.card {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: 15px 0;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 2px solid rgba(200, 167, 125, 0.114);
+  background-color: rgba(188, 187, 154, 0.622);
+  border-radius: 15px;
+  cursor: pointer;
+  animation: show 1s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.6;
+    width: 450px;
+  }
+}
+
+.card textarea {
+  width: 90%;
+  height: 30px;
+  margin: 15px 0 0 0;
+  padding: 0 0 5px 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 30px;
+  font-family: Tilt;
+  border: 0;
+  border-bottom: 3px solid rgba(30, 22, 3, 0.1);
+  background-color: rgba(177, 176, 146, 0);
+}
+
+textarea:focus {
+  outline: none;
+  border-bottom: 3px solid rgba(143, 123, 80, 0.832);
+}
+
+.textarea-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card > p {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  font-family: Tilt;
+  border: 0;
+}
+
+/* buttons */
+
+.clean {
+  width: 30px;
+  aspect-ratio: 1/1;
+  margin-left: 15px;
+  align-self: end;
+  background-color: rgba(218, 10, 10, 0.1);
+  background-image: url("../../../../../../../assets/img/delete.png");
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  background-position: 4px;
+  border: 0;
+  border-radius: 10px;
+  transition: background-color 2s, opacity 1s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.clean:hover {
+  background-color: rgba(218, 10, 10, 0.3);
+  opacity: 0.7;
+}
+
+.card > button {
+  width: 55px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  font-size: 35px;
+  border: 0;
+  background-repeat: no-repeat;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+.anime-close {
+  animation: close 1s;
+  animation-fill-mode: backwards;
+}
+@keyframes close {
+  to {
+    background-color: rgba(177, 176, 146);
+
+    opacity: 0;
+  }
+}
+
+.close {
+  top: -2px;
+  right: -2px;
+  background-color: rgba(188, 187, 154, 0.822);
+  background-image: url("../../../../../../../assets/img/cross.png");
+  background-size: 35px 35px;
+  background-position: 10px;
+  border-radius: 0 10px 0;
+}
+.close:hover {
+  background-color: rgba(188, 175, 160);
+}
+
+.ok {
+  bottom: -2px;
+  right: -2px;
+  color: rgba(0, 0, 0, 0.675);
+  border-radius: 10px 0 10px 0;
+  background-color: rgba(136, 184, 117, 0.941);
+}
+.ok:hover {
+  background-color: rgba(99, 192, 62, 0.941);
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 330px;
+    color: rgba(0, 0, 0, 0.687);
+  }
+
+  @keyframes show {
+    0% {
+      opacity: 0.6;
+      width: 300px;
+    }
+  }
+
+  .card > p {
+    font-size: 15px;
+  }
+
+  .card textarea {
+    width: 90%;
+    height: 30px;
+    font-size: 25px;
+  }
+
+  .clean {
+    width: 25px;
+    background-size: 20px 20px;
+    background-position: 3px;
+  }
+
+  .card > button {
+    width: 35px;
+    font-size: 23px;
+    background-size: 17px, 17px;
+  }
+}

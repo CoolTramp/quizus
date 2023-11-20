@@ -1,0 +1,51 @@
+.main {
+  width: 500px;
+  aspect-ratio: 1 / 0.1;
+  display: flex;
+  margin: 30px auto 0;
+}
+
+.main > button {
+  width: 250px;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  font-family: Tilt;
+  border-radius: 6px;
+  border: 0;
+  background-color: rgba(187, 187, 177, 0.5);
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+.main > button:hover {
+  background-color: rgba(177, 176, 146, 0.7);
+}
+
+.btn-marked-cards {
+  background-image: url("../../../../../assets/img/star-gold2.png");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: 200px;
+}
+
+.clicked {
+  color: rgba(0, 0, 0, 0.6) !important;
+  border: 3px solid rgba(114, 88, 57, 0.069) !important;
+  background-color: rgba(200, 178, 150, 0.7) !important;
+}
+
+@media screen and (max-width: 575px) {
+  .main {
+    width: 370px;
+  }
+  .main > button {
+    width: 180px;
+    font-size: 20px;
+  }
+
+  .btn-marked-cards {
+    background-size: 20px 20px;
+    background-position: 155px;
+  }
+}

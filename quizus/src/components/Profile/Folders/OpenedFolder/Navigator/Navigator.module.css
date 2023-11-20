@@ -1,0 +1,94 @@
+.color-red {
+  color: rgb(193, 218, 218);
+  background-color: rgb(196, 109, 109);
+}
+.color-red:hover {
+  background-color: red;
+}
+
+.first {
+  animation: first 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes first {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.second {
+  animation: second 1.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes second {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.third {
+  animation: third 1.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes third {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fourth {
+  animation: fourth 1.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fourth {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.anime-jump {
+  animation: jump 3s infinite linear;
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(-3px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .color-red {
+    color: rgb(189, 222, 222);
+  }
+}

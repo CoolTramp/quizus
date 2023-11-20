@@ -1,0 +1,151 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.goodbg {
+  animation: goodColor 2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes goodColor {
+  from {
+    background-color: rgb(205, 126, 22);
+  }
+  to {
+    background-color: rgb(79, 135, 79);
+  }
+}
+
+.badbg {
+  animation: badColor 2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes badColor {
+  from {
+    background-color: rgb(79, 135, 79);
+  }
+  to {
+    background-color: rgb(205, 126, 22);
+  }
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  border: 170px solid;
+  border-image-slice: 22.3%;
+  border-image-source: url("../../../assets/img/border.png");
+}
+
+/*  */
+
+.cross {
+  margin-left: 320px;
+}
+.cross button {
+  background-color: rgb(230, 194, 147);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  height: 45px;
+  overflow: hidden;
+}
+
+/*  */
+
+.link:hover {
+  background-color: rgb(237, 169, 79);
+}
+
+.screen input {
+  font-size: 30px;
+  font-family: Tilt;
+  border-radius: 10px;
+  background-color: rgb(230, 194, 147);
+}
+
+.screen p {
+  font-family: Tilt;
+  text-align: center;
+  padding: 0;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.btn {
+  padding: 8px;
+  width: 120px;
+  opacity: 0;
+  margin-top: 10px;
+  margin-left: 60%;
+  font-family: Tilt;
+  font-size: 30px;
+  border-radius: 50px;
+  border: 3px solid black;
+  background-color: rgb(60, 146, 60);
+  transition: background-color 1s;
+}
+.btn:hover {
+  background-color: rgb(43, 178, 43);
+}
+
+.show {
+  animation: grow 1s, jump 3s infinite linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+    font-size: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 120px;
+    cursor: pointer;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+    border-radius: 18px;
+    background-color: rgb(205, 126, 22);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .main {
+    height: 140vh;
+    align-items: start;
+    overflow: hidden;
+  }
+
+  .screen p {
+    padding: 0;
+    margin: 10px;
+  }
+
+  .screen button {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 60%;
+    font-size: 25px;
+    border: 5px solid;
+    border-color: #449615;
+    background-color: #67bb37;
+  }
+}

@@ -1,0 +1,92 @@
+.card {
+  width: 600px;
+  min-height: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.cardInner {
+  width: 100%;
+  height: var(--card-height--);
+  margin: 0;
+  transform-style: preserve-3d;
+  border: 0;
+  border-radius: 20px;
+  transition: transform 0.6s;
+  position: relative;
+}
+
+.fontCard,
+.backCard {
+  background-color: rgba(149, 163, 149, 0.5);
+  backface-visibility: hidden;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fontCard {
+  font-size: var(--font-size-term--);
+}
+
+.backCard {
+  position: absolute;
+  top: 0;
+  font-size: var(--font-size-definition--);
+  transform: rotateY(180deg);
+}
+
+.flip {
+  transform: rotateY(180deg);
+}
+
+.image {
+  width: var(--width-value);
+  height: var(--height-value);
+  border-radius: 10px;
+  background-image: var(--image-source);
+  background-size: var(--width-value) var(--height-value);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card > p {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Tilt;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.crutch {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media screen and (max-width: 560px) {
+  .card {
+    width: 100%;
+    min-height: 250px;
+    margin: 0;
+  }
+
+  .cardInner {
+    /* margin-bottom: var(--margin--); */
+    margin-bottom: 10px;
+  }
+
+  .fontCard {
+    font-size: var(--font-size-term-tel--);
+  }
+
+  .backCard {
+    font-size: var(--font-size-definition-tel--);
+  }
+}

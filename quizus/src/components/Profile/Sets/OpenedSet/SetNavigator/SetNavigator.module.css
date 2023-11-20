@@ -1,0 +1,64 @@
+.first {
+  animation: first 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes first {
+  0% {
+    transform: translateX(400px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.second {
+  animation: second 1.1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes second {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.third {
+  animation: third 1.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes third {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fourth {
+  animation: fourth 1.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fourth {
+  0% {
+    transform: translateX(300px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .color-red {
+    color: rgb(189, 222, 222);
+  }
+}

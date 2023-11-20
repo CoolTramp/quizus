@@ -1,0 +1,95 @@
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border {
+  border: 220px solid black;
+  border-image-slice: 24%;
+  border-image-source: url("../../../assets//img/border.png");
+}
+
+.container {
+  font-family: Tilt;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 50px 40px;
+}
+
+.container p {
+  color: rgb(115, 71, 12);
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  text-align: center;
+}
+
+.container input {
+  max-width: 330px;
+  font-size: 35px;
+  background-color: rgb(220, 164, 91);
+  border-radius: 10px;
+}
+
+.container button {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btnLogin {
+  margin-top: 20px;
+  font-size: 35px;
+  padding: 0 110px;
+  background-color: rgb(155, 103, 35);
+  border: rgb(155, 103, 35);
+  color: #f8f8f8;
+}
+
+.linkFargotPassword {
+  cursor: pointer;
+  text-align: center;
+  font-size: 23px;
+  color: rgb(115, 71, 12);
+  text-decoration: none;
+}
+
+.linkFargotPassword:hover {
+  text-decoration: underline;
+}
+
+.linkRegistration {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 35px;
+  padding: 0 40px;
+  color: #f8f8f8;
+}
+
+.btnRegistration {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 35px;
+  margin: 10px 40px;
+  border: #55a484;
+  background-color: #55a484;
+  transition: background-color 1s;
+}
+.btnRegistration:hover {
+  background-color: #0c8152;
+}
+
+@media screen and (max-width: 578px) {
+  .main {
+    overflow: hidden;
+  }
+  .container input {
+    width: 320px;
+    font-size: 30px;
+  }
+}

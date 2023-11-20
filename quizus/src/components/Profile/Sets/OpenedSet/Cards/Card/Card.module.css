@@ -1,0 +1,127 @@
+.main {
+  width: 500px;
+  aspect-ratio: 1/0.5;
+  margin: 15px 0;
+  padding: 0 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(114, 88, 57, 0.069);
+  background-color: rgba(177, 176, 146, 0.575);
+  border-radius: 25px;
+  cursor: pointer;
+  animation: show 1s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0.6;
+  }
+}
+
+.main > p {
+  padding: 15px 0 0 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 30px;
+  font-family: Tilt;
+  text-align: center;
+  overflow-wrap: break-word;
+  border: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  background-color: rgba(177, 176, 146, 0.1);
+}
+
+.term {
+  margin: 40px 0 -6px 0;
+}
+
+.definition {
+  margin: 20px 0 60px;
+}
+
+.image {
+  width: var(--width-value);
+  height: var(--height-value);
+  margin: -40px auto 20px;
+  border-radius: 10px;
+  background-image: var(--image-source);
+  background-size: var(--width-value) var(--height-value);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* buttons */
+.main > button {
+  width: 55px;
+  aspect-ratio: 1/1;
+  position: absolute;
+  border: 0;
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+  transition: background-color 1s;
+  cursor: pointer;
+}
+
+/* */
+.anime-delete {
+  animation: del 1s;
+  animation-fill-mode: backwards;
+}
+@keyframes del {
+  from {
+    background-color: rgba(255, 0, 0, 0.299);
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.anime-edit {
+  animation: edit 1s;
+  animation-fill-mode: backwards;
+}
+@keyframes edit {
+  50% {
+    background-color: rgba(177, 176, 146);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    width: 330px;
+    color: rgba(0, 0, 0, 0.687);
+  }
+
+  @keyframes show {
+    from {
+      width: 300px;
+      opacity: 0.6;
+    }
+  }
+
+  .main > button {
+    width: 40px;
+    background-size: 25px 25px;
+  }
+  .btn-del {
+    background-position: 7px;
+  }
+
+  .main > p {
+    padding: 20px 0 0 0;
+    font-size: 25px;
+  }
+
+  .term {
+    margin: 40px 0 -11px 0;
+  }
+  .image {
+    width: calc(var(--width-value) - 20px);
+    height: calc(var(--height-value) - 20px);
+    background-size: calc(var(--width-value) - 20px)
+      calc(var(--height-value) - 20px);
+  }
+}

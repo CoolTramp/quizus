@@ -1,0 +1,81 @@
+.main {
+  width: 100%;
+  aspect-ratio: 1/2.5;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(122, 127, 162, 0.541);
+}
+
+.create-set-container {
+  width: 270px;
+  aspect-ratio: 1/1.1;
+  margin: 150px auto;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgba(97, 105, 117, 0.801);
+  border-radius: 15px;
+  background-color: rgba(97, 105, 117, 0.801);
+}
+
+.btn-close-windows {
+  width: 35px;
+  aspect-ratio: 1/1;
+  margin: 0;
+  align-self: end;
+  border-radius: 10px;
+  background-color: rgba(233, 226, 226, 0.802);
+  background-image: url("../../../../../../assets/img/cross.png");
+  background-size: 23px 23px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.btn-close-windows:hover {
+  background-color: rgba(233, 226, 226, 0.602);
+}
+
+.create-set-container > p {
+  margin: 0;
+  padding: 0;
+  font-size: 33px;
+  font-family: Tilt;
+  text-align: center;
+  color: rgba(221, 214, 214, 0.824);
+}
+
+.create-set-container > input[type="text"] {
+  width: 95%;
+  margin: 0 auto 10px;
+  font-size: 25px;
+  color: rgb(77, 73, 73);
+  border-radius: 5px;
+  background-color: rgba(237, 205, 205, 0.978);
+}
+
+.warning {
+  width: 1px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.btn-create {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 30px;
+  font-family: Tilt;
+  color: rgba(243, 230, 230, 0.832);
+  border-radius: 0 0 15% 15%;
+  background-color: rgba(174, 172, 172, 0.802);
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.btn-create:hover {
+  background-color: rgba(174, 172, 172, 0.602);
+}
+
+@media screen and (max-width: 550px) {
+}

@@ -1,0 +1,84 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 120px;
+  aspect-ratio: 1/0.5;
+  border: 0;
+  border-radius: 15px;
+  background-color: rgb(126, 147, 120, 0.2);
+}
+
+.lift {
+  transform-origin: 0 100%;
+  animation: lift 2s;
+}
+
+@keyframes lift {
+  from {
+    transform: rotate(-10deg);
+  }
+}
+
+.fly-card {
+  background-image: url("../../../../../../../assets/img/shuffle.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.jump {
+  animation: jump 2s ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    transform: rotate(-100px);
+  }
+  50% {
+    transform: translateY(-100px) rotate(740deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-jump {
+  width: 100px;
+  color: rgba(255, 255, 255, 0.474);
+  font-size: 25px;
+  font-family: Tilt;
+  border: 0;
+  border-radius: 5px 5px 10px 10px;
+  background-color: rgb(126, 147, 120);
+
+  cursor: pointer;
+}
+
+.change {
+  animation: change 2s;
+}
+@keyframes change {
+  to {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(126, 147, 120, 0.5);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card {
+    width: 90px;
+    aspect-ratio: 1/0.5;
+  }
+  .fly-card {
+    background-size: 35px 35px;
+  }
+  .btn-jump {
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-radius: 10px;
+  }
+}

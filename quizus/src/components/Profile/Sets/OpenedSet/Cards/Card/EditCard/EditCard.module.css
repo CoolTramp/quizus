@@ -1,0 +1,11 @@
+.btn-edit {
+  top: -2px;
+  right: -2px;
+  background-position: 10px;
+  background-color: rgba(177, 176, 146, 0.575);
+  background-image: url("../../../../../../../assets/img/pencil.png");
+  border-radius: 0 20px 0 20px;
+}
+.btn-edit:hover {
+  background-color: rgb(165, 163, 122);
+}

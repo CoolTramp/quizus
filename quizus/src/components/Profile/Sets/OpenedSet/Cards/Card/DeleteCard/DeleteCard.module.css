@@ -1,0 +1,17 @@
+.btn-del {
+  bottom: -2px;
+  left: -2px;
+  background-position: 10px;
+  border-radius: 0 20px 0 20px;
+  background-color: rgba(209, 94, 94, 0.773);
+  background-image: url("../../../../../../../assets/img/delete.png");
+}
+.btn-del:hover {
+  background-color: rgba(196, 52, 52, 0.773);
+}
+
+@media screen and (max-width: 576px) {
+  .btn-del {
+    background-position: 7px;
+  }
+}

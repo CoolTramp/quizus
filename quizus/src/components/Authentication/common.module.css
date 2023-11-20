@@ -1,0 +1,19 @@
+.inputBG {
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  background-position: 95%;
+}
+
+.error {
+  background-image: url("../../assets/img/close.png") !important;
+}
+
+.correct {
+  background-image: url("../../assets/img/correct.png") !important;
+}
+
+@media screen and (max-width: 578px) {
+  .inputBG {
+    background-size: 25px 25px;
+  }
+}

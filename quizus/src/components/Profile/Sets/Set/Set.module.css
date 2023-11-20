@@ -1,0 +1,61 @@
+.main {
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  background-color: rgba(202, 166, 87, 0.399);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow-y: scroll;
+  transition: background-color 1s;
+}
+
+.main:hover {
+  background-color: rgba(234, 198, 119, 0.588);
+}
+
+.firstString {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  margin: 0;
+  font-family: Tilt;
+  font-size: 25px;
+  color: rgba(89, 49, 49, 0.89);
+}
+
+.image {
+  margin: 0;
+  width: 90px;
+  aspect-ratio: 1/0.5;
+  border-radius: 5px;
+  background-image: var(--image-url-value);
+  background-size: 90px 45px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.descriptor {
+  overflow-wrap: break-word;
+  margin: 5px 0 0 0;
+  font-size: 22px;
+  color: rgb(92, 59, 59);
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    background-color: rgb(210, 207, 207);
+  }
+  .image {
+    width: 70px;
+    aspect-ratio: 1/0.5;
+    background-size: 70px 35px;
+  }
+  .descriptor {
+    font-size: 15px;
+    color: rgb(108, 93, 93);
+  }
+}

@@ -1,0 +1,51 @@
+.main {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(243, 242, 242, 0.381);
+}
+
+.container {
+  width: 200px;
+  aspect-ratio: 1/0.5;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 70%;
+  font-family: Tilt;
+  background-color: rgb(162, 146, 146);
+  border-radius: 5px;
+}
+
+.container > p {
+  margin: 0;
+  padding: 10px 0 10px;
+  color: rgb(95, 85, 85);
+  font-size: 30px;
+  text-align: center;
+}
+
+.buttons {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  font-size: 25px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    top: 25%;
+    left: 30%;
+  }
+  .btn {
+    color: grey;
+  }
+}

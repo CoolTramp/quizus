@@ -1,0 +1,46 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 30%;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #909599;
+  opacity: 0.3;
+}
+
+@font-face {
+  font-family: Tilt;
+  src: url("./assets/fonts/Tilt_Neon/Tilt.ttf");
+}
+
+@font-face {
+  font-family: Pacifico;
+  src: url("./assets/fonts/Pacifico/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: Dancing;
+  src: url("./assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+.hidden {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 1s;
+}
+
+.hidden-helper {
+  min-height: 0;
+}
+
+.unhidden {
+  grid-template-rows: 1fr;
+}

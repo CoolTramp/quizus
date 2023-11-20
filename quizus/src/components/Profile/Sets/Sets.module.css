@@ -1,0 +1,44 @@
+.main {
+  padding: 10px 40px;
+  background-color: rgba(3, 4, 8, 0.016);
+  border-radius: 30px;
+}
+.animation {
+  animation: sets 1.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes sets {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main > p {
+  margin: 0;
+  padding: 0;
+  color: rgb(139, 112, 112);
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: Pacifico;
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: start;
+  overflow: scroll;
+  height: 150px;
+  margin-left: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.202);
+  border-radius: 5px;
+}

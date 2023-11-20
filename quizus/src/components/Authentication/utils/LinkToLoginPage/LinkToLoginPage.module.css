@@ -1,0 +1,21 @@
+:root {
+  --link-size: 35px;
+  --font-size: 30px;
+}
+.main {
+  display: inline-block;
+  background-image: url("../../../../assets/img/cross.png");
+  background-size: var(--link-size);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgb(230, 194, 147);
+  width: var(--link-size);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 5px;
+
+  border-radius: 10px;
+  transition: background-color 1s;
+}

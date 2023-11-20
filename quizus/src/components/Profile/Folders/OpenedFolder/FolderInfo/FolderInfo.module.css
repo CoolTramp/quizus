@@ -1,0 +1,87 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(177, 176, 146, 0.481);
+  border-radius: 3px;
+  overflow: scroll;
+}
+
+.main p {
+  margin: 0 40px 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.text-container {
+  margin: 0 0 0 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.folder-name {
+  display: flex;
+  font-size: 60px;
+  color: rgba(110, 87, 87, 0.509);
+  font-family: Dancing;
+  animation: name 1s;
+}
+
+.folder-name-anime {
+  animation: folder-name 1s;
+}
+@keyframes folder-name {
+  from {
+    opacity: 0;
+    border-radius: 50px 50px 0 0;
+    background-color: rgb(149, 114, 114);
+    font-size: 55px;
+    transform: translateY(30px);
+  }
+}
+
+.description {
+  color: rgb(122, 115, 115);
+  font-size: 30px;
+  font-family: Tilt;
+}
+
+.image {
+  margin: 0 50px 0 0;
+  width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 3px;
+  background-image: var(--image--surce-);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 550px) {
+  .text-container {
+    margin: 0 0 0 15px;
+  }
+
+  .folder-name {
+    font-size: 30px;
+  }
+
+  @keyframes folder-name {
+    from {
+      opacity: 0;
+      border-radius: 50px 50px 0 0;
+      background-color: rgb(203, 5, 5);
+      font-size: 28px;
+      transform: translateY(30px);
+    }
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .image {
+    width: 120px;
+    margin: 0 10px 0 0;
+  }
+}
